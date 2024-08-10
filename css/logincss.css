@@ -1,0 +1,85 @@
+body{
+    color: white;
+    font-size: 17px;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    
+  }
+div.center{
+    border-radius: 10px;
+    border: 2px solid yellow;
+    text-align: center;
+    margin: auto;
+    width:30%;
+    padding: 13px 15px;
+    backdrop-filter: brightness(50%);
+    margin-top: 30px;
+}
+img{
+    width:100%;
+    height:25%;
+}
+input{
+    width: 75%;
+    height: auto;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    padding: 13px 15px;
+    color: white;
+}
+::placeholder{
+    color: white;
+    font-size: 15px;
+}
+h3{
+    text-align: left;
+    margin-left: 70px;
+}
+button{
+    font-size: 15px;
+    padding: 10px 24px;
+    border-radius: 6px;
+    background-color: yellow;
+}
+button:hover{
+    background-color: yellowgreen;
+}
+.password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.password-toggle-icon{
+    float: right;
+    margin-right: 60px;
+}
+a{
+    font-size: 17px;
+}
+a:visited {
+    color: cyan;
+    background-color: transparent;
+}
+a:hover{
+    color: white;
+    background-color: transparent
+}
+a:active{
+    color: yellow;
+    background-color: transparent
+}
+.hide{
+    text-align: left;
+    padding-left: 65px;
+}
+.hide h6{
+    color: #EE4B2B;
+    display: none;
+}

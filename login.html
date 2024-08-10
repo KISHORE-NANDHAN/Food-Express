@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>express food</title>
+		<link rel="stylesheet" type="text/css" href="css/logincss.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="icon" type="png" href="images/icon.png">
+		<script src="js/login.js"></script>
+	</head>
+	<body>
+		<video autoplay muted loop id="myVideo">
+			<source src="images/signupbg.mp4" type="video/mp4">
+		</video>
+		<div class="center">
+			<form name="valid" method="POST" onsubmit="return validateForm()" action="Login.jsp">
+				<img src="images/logo2.png"/>
+				<h2>Login before continue</h2>
+				<h3>Email ID :</h3>
+				<input type="email" placeholder="Eg:- User@gmail.com" name="mail" height="3%" size="20"><br>
+				<div class="hide">
+					<h6 class="null2">*email should not be empty</h6>
+					<h6 class="valid1">*email is not valid enter a valid email</h6>
+				</div>
+				<h3>Enter password :</h3>
+				<div style="position: relative;">
+            	    <input type="password" placeholder="enter password" name="password" id="passwordField">
+                	<span class="password-toggle-icon" onclick="togglePasswordVisibility('passwordField', 'toggleIcon1')"><i id="toggleIcon1" class="fas fa-eye"></i></span>
+	            </div>
+				<div class="hide">
+					<h6 class="null5">*password field should not be empty</h6>
+					<h6 class="valid4">*password should contain [a-z][A-Z][0-9] and should be of minimum 8 characters</h6>
+				</div>
+				<h5><a href="otp.html">forget password ?</a></h5>
+				<h5><a href="signup.html">not have an account ?</a></h5>
+				<center><button type="submit">submit</button></center>
+			</form>
+		</div>
+	</body>
+</html>

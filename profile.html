@@ -1,0 +1,116 @@
+<%
+    String mail = request.getParameter("mail");
+
+    String qry = "select * from User where email=?";
+	PreparedStatement pstmt = con.prepareStatement(qry);
+
+    pstmt.setString(1,mail);
+    ResultSet rs = pstmt.executeQuery();
+    if(rs.next())
+    {
+        String un = rs.getString(1);
+        String mobile = rs.getString(3);
+        String dob = rs.getString(4);
+        String gender = rs.getString(5);
+        String dno = rs.getString(6);
+        String street = rs.getString(7);
+        String pin = rs.getString(8);
+        String city = rs.getString(9);
+        String state = rs.getString(10);
+    }
+%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/profile-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="logo-background">
+        <img src="images/logo2.png" class="logo">
+            <div class="links">
+                <table>
+                    <tr>
+                        <td><a href="home.jsp">home</a></td>
+                        <td><a href="#about us">about us</a></td>
+                        <td><a href="explore.html">explore</a></td>
+                        <td><a href="logout.jsp">Logout</a></td>
+                        <td><a href="profile.jsp">profile</a></td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-info">
+                <h2>User Information</h2>
+                <div class="input-group">
+                    Name:
+                        <input class="id" type="text" value="<%=un %>" id="name" disabled>
+                </div>
+                <div class="input-group">
+                    Date of Birth:
+                        <input class="id" type="text" value="<%=dob %>" id="dob" disabled>
+                </div>
+                <div class="input-group">
+                    <div class="input-group">
+                        Gender:
+                            <select class="id" name="gender" disabled>
+                                <option value="<%=gender %>"><%=gender %></option>
+                            </select>
+                    </div>
+                </div>
+                <div class="input-group">
+                    Email:
+                        <input type="email" value="<%=mail %>" id="email" disabled>
+                </div>
+                <div class="input-group">
+                    Mobile No:
+                        <input class="id" type="text" value="<%=mobile %>" id="phno" disabled>
+                </div>
+                <div class="input-group">
+                    Door no:
+                        <input class="id" type="text" value="<%=dno %>" id="dno" disabled>
+                </div>
+                <div class="input-group">
+                    Street:
+                        <input class="id" type="text" value="<%=street %>" id="street" disabled>
+                </div>
+                <div class="input-group">
+                    Pin code:
+                        <input class="id" type="text" value="<%=pin %>" id="pcode" disabled>
+                </div>
+                <div class="input-group">
+                    City:<br>
+                        <input class="id" type="text" value="<%=city %>" id="city" disabled>
+                </div>
+                <div class="input-group">
+                    State:
+                        <select class="id" name="state" disabled>
+                            <option value="<%=state %>">"<%=state %>"</option>
+                            <option value="Andhra pradesh">Andhra pradesh</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Karnataka">Karnataka</option>
+                        </select>
+                </div>
+                <button class="edit-btn" onclick="enableInput()"><i class="fas fa-pencil-alt"></i> Edit Info</button>
+                <button class="save-btn" onclick="saveChanges()"><i class="fas fa-save"></i> Save Changes</button>
+            </div>
+            <div class="profile-image">
+                <img src="images/profile-img.jpg" alt="Profile Picture">
+            </div>
+        </div>
+        <div class="orders">
+            <h2>Recent Orders</h2>
+            <button class="btn" onclick="table.jsp">View Past orders</button>
+            
+        </div>
+    </div>
+        <script src="js/profilejs.js"></script>
+</body>
+</html>

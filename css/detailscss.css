@@ -1,0 +1,98 @@
+body{
+    background-color: #f5fee9;
+}
+.logo-search {
+    background-color: blueviolet;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 15%;
+    width: 20%;
+}
+input.search {
+    border-radius: 10px;
+    width: 350px;
+    height: 50px;
+}
+button {
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+img{
+    height: 15%;
+    width: 20%;
+}
+.offer{
+    width: 368x;
+    height: 600px;
+}
+.parent{
+    display: inline-flex;
+    float: left;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+#photo{
+    float: left;
+    padding: 1rem 1rem;
+}
+#photo-details{
+    text-align: start;
+}
+h1,h3,p{
+    float: left;
+    align-items:flex-start ;
+}
+p{
+    font-size: 20spx;
+}
+.order{
+    height: 50px;
+    width: 150px;
+    background-color: #3e8e41;
+    color: white;
+}
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#order_img{
+    width: 300px; /* Adjust the width as needed */
+    height: 360px; /* Maintain aspect ratio */
+  }
+table{
+    width: 1100px;
+    height: auto;
+}
+.Restaurant{
+    width: 326px;
+    height: auto;
+}
+.restaureants{
+    background-color: #f0f0f0;
+}
+.buttons{
+    justify-content: space-between;
+    padding: 5px;
+}
+.appbutton{
+    border: 1px 1px 0px 1px black;
+    width: 100px;
+    height: 40px;
+    margin-left: 40px;
+}
+.align{
+    text-align: right;
+}
+

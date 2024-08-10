@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <title>delivery</title>
+        <link rel="stylesheet" href="css/order-delivery.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <script src="js/order-delivery-js.js"></script>
+    </head>
+    <body>
+        <section>
+            <img src="images/logo3.png" class="logo">
+        </section>
+        <section>
+            <div class="form">
+                <h1 align="center" class="head">Order details</h1>
+                <form onsubmit="return validateForm()" name="register" method="POST" action="order.jsp">
+                <table class="order-form">
+                    <tr><td><h3>Name : </h3></td></tr>
+                    <tr>
+                        <td><input type="text" placeholder="name" name="uname" class="field">
+                        <div class="hide">
+                            <h5 class="null1">*Username should not be empty</h5>
+                            <h5 class="valid1">*Username should be only letters from A-z and a-z</h5>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr><td><br><h3>Phone Number :</h3></td><td><br><h3>E-mail : </h3></td></tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Phone number" name="phno" class="field">
+                            <div class="hide">
+                                <h5 class="null2">*mobile number should not be empty</h5>
+                                <h5 class="valid2">*mobile should contain 10 digits</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="email" placeholder="user123@gmail.com" name="email" class="field">
+                            <div class="hide">
+                                <h5 class="null3">*email should not be empty</h5>
+                                <h5 class="valid3">*email should be in given format</h5>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr><td><br><h2>Adress section</h2></td></tr>
+                    <tr><td><h3>Door no : </h3></td><td><h3>Street name :</h3></td></tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="12-34/4b" name="dno" class="field">
+                            <div class="hide">
+                                <h5 class="null4">*dno should not be empty</h5>
+                                <h5 class="valid4">*dno should be in given format as in placeholder</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="street name" name="street" class="field">
+                            <div class="hide">
+                                <h5 class="null5">*street field should not be empty</h5>
+                                <h5 class="valid5">*field should contain only text</h5>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr><td><br><h3>City : </h3></td><td><br><h3>State : </h3></td></tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="e.g:- vijayawada" name="city" class="field">
+                            <div class="hide">
+                                <h5 class="null6">*city field should not be empty</h5>
+                                <h5 class="valid6">*field should contain only text</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="State" class="field" name="state" list="data">
+                            <div class="hide">
+                                <h5 class="null7">*city field should not be empty</h5>
+                                <h5 class="valid7">*field should contain only text</h5>
+                            </div>
+                        </td>
+                            <datalist id="data">
+                                <option>krishna</option>
+                                <option>guntur</option>
+                                <option>kurnool</option>
+                                <option>nellore</option>
+                                <option>vizag</option>
+                            </datalist>
+                    </tr>
+                    <tr>
+                        <td><br><h3>Postal/Zipcode : </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="e.g:- 520011" name="zip" class="field">
+                            <div class="hide">
+                                <h5 class="null8">*pincode field should not be empty</h5>
+                                <h5 class="valid8">*pincode should contain 6 digits</h5>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr><td><h3>Food Details : </h3></td></tr>
+                    <tr class="orderimg">
+                        <td colspan="4"><img src="" alt="chiken biryani" id="order_img"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <h3 name="item" id="order_h1"> : </h3>
+                            <p id="order_p"></p>
+                            <h2 id="order_h2"></h2>
+                            <h4>Rate : <s>400  </s>350 <small>(including GST and other taxes)</small></h4>
+                            <input type="hidden" name="order_h1" id="order_h1_1">
+                            <input type="hidden" name="rate" value="350">
+                        </td>
+                    </tr>
+                    <tr><td><br><input type="checkbox" class="box" required><b>Confirm</b></td></tr>
+                    <tr>
+                        <td><h2>add on's</h2></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="box">Drinks
+                            <select name="drink">
+                                <option selected>Select a Drink</option>
+                                <option value="thums-up">Thums-up</option>
+                                <option value="sprite">sprite</option>
+                                <option value="coco-cola">coco-cola</option>
+                                <option value="pepsi">pepsi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr><td><h3>Credit Details : </h3></td></tr>
+                    <tr>
+                        <td>
+                            <input type="number" placeholder="Account Number" name="accno" class="field">
+                            <div class="hide">
+                                <h5 class="null9">*account-no should not be empty</h5>
+                                <h5 class="valid9">*account-no should contain only digits</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="number" placeholder="CVV" name="cvv" class="field">
+                            <div class="hide">
+                                <h5 class="null10">*cvv should not be empty</h5>
+                                <h5 class="valid10">*cvv should contain only 3 digits</h5>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr><td><br><h3>Expiry Date : </h3></td><td><br><h3>Account Type : </h3></td></tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="month/year" name="expr" class="field">
+                            <div class="hide">
+                                <h5 class="null11">*expr date should not be empty</h5>
+                                <h5 class="valid11">*expr date should be in given format</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Account type" name="acctype" class="field">
+                            <div class="hide">
+                                <h5 class="null12">*account-type should not be empty</h5>
+                                <h5 class="valid12">*account-type should contain text</h5>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><br><br><center><input type="submit" class="submit"></center></td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+        </section>
+    </body>
+    <footer>
+        <div class="nav-top-bar">
+            <span>copyrights reserved @ Jajula kishore nandhan 22761A0588 LBRCE</span>
+        </div>
+    </footer>
+</html>

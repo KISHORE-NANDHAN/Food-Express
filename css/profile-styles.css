@@ -1,0 +1,140 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url('../images/background-pro.jpeg'); 
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.logo {
+    width: 35%;
+    top: 0px;
+  }
+  .links{
+    overflow: hidden;
+  }
+  .links a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: yellow;
+    margin-top:50px;
+    padding: 10px;
+  }
+  .logo-background{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  .nav-top-bar{
+    background-color: #1a1a1a;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.profile{
+    color: #fff000;
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: brightness(50%);
+}
+.orders{
+    color: #fff000;
+    margin-left: 70px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: brightness(50%);
+}
+.orders h2{
+    padding: 20px;
+}
+.profile-info {
+    flex: 1;
+    padding: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+.input-group input,select {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.edit-btn{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.input-group .edit-btn:hover {
+    background-color: #45a049;
+}
+
+.save-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #0056b3;
+}
+
+.profile-image {
+    flex: 1;
+    margin-top: 70px;
+    text-align: center;
+    padding: 30px;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.btn{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 20px;
+}
+.id, #email{
+    background-color: rgba(149, 107, 107, 0.178);
+    font-size: 18px;
+    color: white;
+}
+.hideTable{
+    display: none;
+    color: white;
+}
+.order-table td,th{
+    padding: 15px;
+}

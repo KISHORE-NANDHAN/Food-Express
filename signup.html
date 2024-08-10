@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>express food</title>
+    <link rel="stylesheet" type="text/css" href="css/signupcss.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw===" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="png" href="images/icon.png">
+    <script src="js/signupjs.js"></script>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="images/signupbg.mp4" type="video/mp4">
+        video is not supported
+    </video>
+    <br>
+    <div class="center">
+        <form name="register" method="POST" onsubmit="return validateForm()" action="Signup.jsp">
+            <img src="images/logo2.png"/>
+            <h2>Sign-Up</h2>
+            <h4>Enter User-Name :</h4>
+            <input type="text" placeholder="Username" name="uname">
+            <div class="hide">
+                <h6 class="null1">*Username should not be empty</h6>
+                <h6 class="length">*Username should be only letters from A-z and a-z</h6>
+            </div>
+            <h4>Enter email id :</h4>
+            <input type="email" placeholder="enter email" name="mail">
+            <div class="hide">
+                <h6 class="null2">*email should not be empty</h6>
+                <h6 class="valid1">*email is not valid enter a valid email</h6>
+            </div>
+            <h4>Enter Mobile No :</h4>
+            <input type="tel" placeholder="enter phone number" name="phno">
+            <div class="hide">
+                <h6 class="null3">*mobile number should not be empty</h6>
+                <h6 class="valid2">*mobile number should be of 10 digits </h6>
+            </div>
+            <h4>Enter Date of Birth :</h4>
+            <input type="date" name="date" max="2010-12-31" min="1950-01-01">
+            <div class="hide">
+                <h6 class="null4">*date of birth should not be null</h6>
+                <h6 class="valid3">*date of birth should not match with current or future dates</h6>
+            </div>  
+            <h4>Enter Gender :</h4>
+            <table>
+                <tr>
+                    <td><input type="radio" id="genMale" name="gender" value="male" required>
+                    <td>Male</td>
+                    <td><input type="radio" id="genFemale" name="gender" value="female" required></td>
+                    <td>Female</td>
+                </tr>
+            </table>
+            <h4>Enter password :</h4>
+            <div style="position: relative;">
+                <input type="password" placeholder="enter password" name="password" id="passwordField">
+                <span class="password-toggle-icon" onclick="togglePasswordVisibility('passwordField', 'toggleIcon1')"><i id="toggleIcon1" class="fas fa-eye"></i></span>
+            </div>
+            <div class="hide">
+                <h6 class="null5">*password field should not be empty</h6>
+                <h6 class="valid4">*password should contain [a-z][A-Z][0-9] and should be of minimum 8 characters</h6>
+            </div>
+            <h5><a href="login.html">already have an account?</a></h5>
+            <center><button type="submit">submit</button></center>
+        </form>
+    </div>
+</body>
+</html>

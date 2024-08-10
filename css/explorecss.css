@@ -1,0 +1,148 @@
+.logo-search {
+    background-color: blueviolet;
+}
+.search {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 15%;
+    width: 20%;
+}
+input.search {
+    border-radius: 10px;
+    width: 350px;
+    height: 50px;
+}
+button {
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+img{
+    height: 15%;
+    width: 20%;
+}
+.button-parent {
+    float: left;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.button-child {
+    display: inline-block;
+    padding: 1rem 1rem;
+}
+.button-child select{
+    font-size: 16px;
+}
+.button-child button {
+    width: 100px;
+    height: 25px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+/*discount css*/
+.image-section {
+    text-align: center;
+    display: inline-flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 20px;
+}
+
+.image-section img {
+    width: 33%; 
+    height: 55%;
+    border-radius: 10px;
+}
+/*order css*/
+.order-parent{
+    float: left;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+.order-child{
+    display: inline-block;
+    padding: 1rem 1rem;
+}
+.order-child img{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+/* order list */
+.list{
+    width: 100%;
+    border-collapse: collapse;
+}
+#image-row{
+    width: 250px;
+    height: 200px;
+}
+td[id^=image-row] img{
+    width: 100%;
+    height: 100%;
+}
+#description-row p{
+    font-size: 20px;
+}
+#description-row h3{
+    color: green;
+    font-size: 20px;
+}
+#description-row{
+    width:700px;
+    height:250px
+}
+td{
+    padding: 20px;
+}
+#description-row button{
+    width: 100px;
+    height: 30px;
+}
+#searchicon {
+    top: 0;
+    right: 60px;
+    bottom: 0;
+    background-color: yellow;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.links{
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 20;
+    overflow: hidden;
+  }
+.links a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ffff00;
+    margin-right: 10px;
+  }
+  .nav-top-bar{
+    background-color: #1a1a1a;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}

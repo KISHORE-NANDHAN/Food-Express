@@ -1,0 +1,402 @@
+<html>
+    <head>
+        <title>explore</title>
+        <link rel="stylesheet" href="css/explorecss.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <script src="js/explorejs.js"></script>
+    </head>
+    <body>
+        <header class="logo-search">
+            <div class="search">
+            <img src="images/logo2.png">
+            <input type="search" class="search" id="searchInput" list="mylist" placeholder="enter your food item"><button id="searchicon" onclick="search()"><i class="fas fa-search"></i></button>
+            <datalist id="mylist">
+                <option>biryani</option>
+                <option>burger</option>
+                <option>ice-cream</option>
+                <option>pizza</option>
+                <option>cake</option>
+                <option>tiffin</option>
+            </datalist>
+            <div class="links">
+                <table>
+                    <tr>
+                        <td><a href="home.jsp">home</a></td>
+                        <td><a href="home.jsp#about us">about us</a></td>
+                        <td><a href="explore.html">explore</a></td>
+                        <td><a href="logout.jsp">Logout</a></td>
+                        <td><a href="pro.jsp">profile</a></td>
+                    </tr>
+                </table>
+            </div>
+         </div>
+        </header>
+        <section>
+            <div class="button-parent">
+                <div class="button-child">
+                    <form>
+                        <select name="dropdown">
+                            <option selected>Filter</option>
+                            <option>Popularity</option>
+                            <option>Rating</option>
+                            <option>Cost : Low to High</option>
+                            <option>Cost : High to Low</option>
+                            <option>Delivery time</option>
+                        </select>
+                    </form>
+                 </div>
+                <div class="button-child"><button class="1">Ratings 4+</button></div>
+                <div class="button-child">
+                <form>
+                    <select>
+                        <option selected>Non-Veg</option>
+                        <option>Pure-Veg</option>
+                    </select>
+                </form>
+                </div>
+                <div class="button-child">
+                    <select>
+                        <option>Cusines</option>
+                        <option>Indian</option>
+                        <option>Thai</option>
+                        <option>Chinese</option>
+                        <option>American</option>
+                    </select>
+                </div>
+             </div>
+        </section>
+        <section class="order">
+            <br><br><br><br><br><br><br><br><br><br>
+            <h2>Insipiration for you Order</h2>
+            <div class="order-parent">
+                <div class="order-child"><a href="#biryani"><img src="images/biryani.jpg" alt="Discount Image"></a><h4>Biryani</h4></div>
+                <div class="order-child"><a href="#burger"><img src="images/burger.jpg" alt="Discount Image"></a><h4>Burger</h4></div>
+                <div class="order-child"><a href="#Ice cream"><img src="images/ice cream.jpg" alt="Discount Image"></a><h4>Ice Cream</h4></div>
+                <div class="order-child"><a href="#pizza"><img src="images/pizza.jpg" alt="Discount Image"></a><h4>Pizza</h4></div>
+                <div class="order-child"><a href="#cake"><img src="images/cake.jpg" alt="Discount Image"></a><h4>Cake</h4></div>
+                <div class="order-child"><a href="#tiffins"><img src="images/tiffins.jpg" alt="Discount Image"></a><h4>Tiffins</h4></div>
+            </div>
+        </section> 
+        <section class="image-section">
+            <img src="images/bir.jpg" alt="Discount Image">
+            <img src="images/bur.jpg" alt="Discount Image">
+            <img src="images/ice.jpg" alt="Discount Image">
+        </section>  
+        <br><br><br><br> 
+        <section>
+            <table class="list">
+                <tr id="biryani">
+                    <td colspan="2"><br><h1>Biryani</h1><br></td>
+                </tr>
+                <tr>
+                    <td id="image-row1"><img src="images/veg biryani.jpg" ></td>
+                    <td id="description-row1">
+                        <h1>Veg Biryani</h1>
+                        <p>Our Veg Biryani is not just a meal, it's a journey through the heart of Indian culinary tradition.this dish promises a fulfilling and satisfying experience that will leave your taste buds longing for more.</p>
+                        <h2>Rating: 4<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row1','description-row1')">see details</button>
+                    </td>
+                    <td id="image-row2"><img src="images/chicken biryani.jpg" ></td>
+                        <td id="description-row2">
+                            <h1>Chicken Biryani</h1>
+                            <p> Topped with caramelized onions, fresh herbs, and a hint of saffron, our Chicken Biryani is an experience you won't want to miss. Order now and savor the taste of authentic Indian cuisine delivered to your doorstep.</p>
+                            <h2>Rating: 4.3<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                            <button onclick="details('image-row2','description-row2')">see details</button>
+                        </td>
+                </tr>
+                <tr>
+                    <td id="image-row3"><img src="images/MuttonBiryani.jpg" ></td>
+                    <td id="description-row3">
+                        <h1>Mutton Biryani</h1>
+                        <p>Each bite is a celebration of authenticity, layered with fragrant rice and garnished with caramelized onions and fresh coriander. Elevate your dining experience with our Mutton Biryani – a true delight for the senses.</p>
+                        <h2>Rating: 5<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row3','description-row3')">see details</button>
+                    </td>
+                    <td id="image-row4"><img src="images/Prawn-Biryani.jpg" ></td>
+                    <td id="description-row4">
+                        <h1>Prawns Biryani</h1>
+                        <p>Dive into a world of exquisite flavors with our Prawns Biryani. Succulent prawns, marinated in a delicate blend of spices, are nestled between layers of aromatic basmati rice, creating a dish that's a celebration of the sea</p>
+                        <h2>Rating: 3.9<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row4','description-row4')">see details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="image-row5"><img src="images/fish-biryani.jpg" ></td>
+                    <td id="description-row5">
+                        <h1>Fish Biryani</h1>
+                        <p>Experience the perfect fusion of seafood and spices with our Fish Biryani. Tender fish pieces, marinated in a harmonious blend of flavors, are gently cooked with fragrant basmati rice, creating a dish that's a delight for your taste buds. </p>
+                        <h2>Rating: 4.4<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row5','description-row5')">see details</button>
+                    </td>
+                    <td id="image-row6"><img src="images/mandi.jpg" ></td>
+                    <td id="description-row6">
+                        <h1>Chicken Mandi</h1>
+                        <p> It is a flavorful and aromatic rice dish that typically features a combination of basmati rice, meat and a blend of aromatic spices. The dish is known for allowing the flavors to meld and infuse into each other.</p>
+                        <h2>Rating: 4.4<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row6','description-row6')">see details</button>
+                    </td>
+                </tr>
+                <tr id="burger">
+                    <td colspan="2"><br><h1>Burgers</h1><br></td>
+                </tr>
+                <tr>
+                    <td id="image-row7"><img src="images/veg burger.jpg" ></td>
+                    <td id="description-row7">
+                        <h1>Veg Burger</h1>
+                        <p>Savor the freshness of nature with our Veg Burger, a delightful creation packed with a medley of crisp garden-fresh vegetables sandwiched between soft, golden buns. Every bite is a burst of flavors, as the crunch of lettuce, tomatoes, and onions harmonize with our special veggie patty. </p>
+                        <h2>Rating: 3.5<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row7','description-row7')">see details</button>
+                    </td>
+                    <td id="image-row8"><img src="images/chicken burger.jpg" ></td>
+                    <td id="description-row8">
+                        <h1>Chicken Burger</h1>
+                        <p>Indulge in the savory perfection of our Chicken Burger, where succulent grilled chicken takes center stage in a symphony of flavors. Juicy, flavorful, and marinated to perfection, our signature chicken patty is complemented by crisp lettuce, fresh tomatoes, and a smear of zesty mayo.  </p>
+                        <h2>Rating: 4<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row8','description-row8')">see details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="image-row9"><img src="images/cheese burger.jpg" ></td>
+                    <td id="description-row9">
+                        <h1>Cheese Burger</h1>
+                        <p>Prepare to be amazed by our Cheese Burger, a masterpiece that brings together the richness of melted cheese and the juiciness of a perfectly grilled patty. Every layer is a symphony of textures and flavors, from the gooey melted cheese to the crunch of fresh lettuce and the tang of pickles.  </p>
+                        <h2>Rating: 4.2<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row9','description-row9')">see details</button>
+                    </td>
+                    <td id="image-row10"><img src="images/ham burger.jpg" ></td>
+                    <td id="description-row10">
+                        <h1>Ham Burger</h1>
+                        <p>Our Ham Burger is a hearty delight that promises a savory experience like no other. Featuring succulent slices of premium ham, this burger is a celebration of meaty goodness. Topped with crisp lettuce, juicy tomatoes, and a touch of our signature sauce, each bite is a journey into the heart of savory indulgence </p>
+                        <h2>Rating: 4.7<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row10','description-row10')">see details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="image-row11"><img src="images/jumbo.jpg" ></td>
+                    <td id="description-row11">
+                        <h1>Jumbo chicken Burger</h1>
+                        <p>Jumbo chicken burgers are popular in fast-food establishments, casual dining restaurants, and on food delivery platforms. They cater to individuals with a hearty appetite who enjoy the bold and savory taste of a generously sized chicken burger. </p>
+                        <h2>Rating: 5<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row11','description-row11')">see details</button>
+                    </td>
+                    <td id="image-row12"><img src="images/bacon burger.jpg" ></td>
+                    <td id="description-row12">
+                        <h1>Bacon Burger</h1>
+                        <p>Bite into smoky perfection with our Bacon Burger, a flavor-packed creation that marries the rich taste of crispy bacon with the juiciness of a perfectly grilled patty. Each layer is a revelation, from the crunch of bacon to the freshness of lettuce, tomatoes, and a dollop of our secret sauce. </p>
+                        <h2>Rating: 5<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row12','description-row12')">see details</button>
+                    </td>
+                </tr>
+                <tr id="Ice cream">
+                    <td colspan="2"><br><h1>Ice Cream</h1><br><td>
+                </tr>
+                <tr>
+                    <td id="image-row13"><img src="images/vannila ice.jpg" ></td>
+                    <td id="description-row13">
+                        <h1>Vannila Ice-cream</h1>
+                        <p>Indulge in the timeless charm of our Classic Vanilla Ice Cream. Immerse yourself in the velvety smoothness of pure vanilla goodness, expertly crafted to deliver a rich and creamy experience. Each spoonful is a journey into the heart of simplicity, where the purity of vanilla beans meets the luscious embrace of fresh cream.</p>
+                        <h2>Rating: 4.1<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row13','description-row13')">see details</button>
+                    </td>
+                    <td id="image-row14"><img src="images/choco ice.jpg" ></td>
+                    <td id="description-row14">
+                        <h1>Chocolate Ice-cream</h1>
+                        <p>Prepare for a symphony of indulgence with our Decadent Chocolate Ice Cream. Dive into the rich, velvety waves of premium cocoa, meticulously blended to create a heavenly chocolate experience. Each scoop is a celebration of deep, intense flavors that dance on your palate, leaving you craving more.</p>
+                        <h2>Rating: 4.8<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row14','description-row14')">see details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="image-row15"><img src="images/butter ice.jpg" ></td>
+                    <td id="description-row15">
+                        <h1>ButterScotch Ice-cream</h1>
+                        <p>Satisfy your sweet tooth with our Butterscotch Indulgence. Dive into a world of buttery bliss as velvety butterscotch swirls meld with creamy ice cream to create a symphony of flavors. Crunch into delightful toffee bits that add the perfect texture to this heavenly treat.</p>
+                        <h2>Rating: 5<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row15','description-row15')">see details</button>
+                    </td>
+                    <td id="image-row16"><img src="images/current ice.jpg" ></td>
+                    <td id="description-row16">
+                        <h1>Black current Ice-cream</h1>
+                        <p>Embark on a flavor journey with our Black Currant Infusion Ice Cream. Each spoonful is a burst of fruity freshness that tingles your taste buds and transports you to a world of summer delight. Order now to experience the Tangy Delight of Black Currant Infusion.</p>
+                        <h2>Rating: 4.8<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row16','description-row17')">see details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="image-row17"><img src="images/straw ice.jpg" ></td>
+                    <td id="description-row17">
+                        <h1>Strawberry Ice-cream</h1>
+                        <p>Immerse yourself in the Sweet Symphony of our Strawberry Sensation Ice Cream. Each scoop is a celebration of fruity freshness, offering a delightful escape into the world of strawberries. Elevate your dessert experience - order now for a taste of pure Strawberry </p>
+                        <h2>Rating: 3.6<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row17','description-row17')">see details</button>
+                    </td>
+                    <td id="image-row18"><img src="images/rasp.jpg" ></td>
+                    <td id="description-row18">
+                        <h1>Black raspberry Ice-cream</h1>
+                        <p>Black raspberry ice cream can be made with fresh or frozen black raspberries. Heavy cream, milk, sugar, and a hint of vanilla along with ripe black raspberries make for a creamy, fruit ice cream.</p>
+                        <h2>Rating: 3.6<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row18','description-row18')">see details</button>
+                    </td>
+                </tr>
+                <tr id="pizza">
+                    <td colspan="2"><br><h1>Pizza</h1><br><td>
+                </tr>
+                <tr>
+                    <td id="image-row19"><img src="images/veg pizza.jpg" ></td>
+                    <td id="description-row19">
+                        <h1>Veg Pizza</h1>
+                        <p>Nestled on a bed of our signature tomato sauce and perfectly melted cheese, our Veg Pizza is a delightful choice for those who crave a symphony of flavors. Order now and experience the Garden Fresh Veggie Delight at your doorstep.</p>
+                        <h2>Rating: 4.1<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row19','description-row19')">see details</button>
+                    </td>
+                    <td id="image-row20"><img src="images/chicken pizza.jpg" ></td>
+                    <td id="description-row20">
+                        <h1>Chicken Pizza</h1>
+                        <p> Topped with a generous layer of gooey melted cheese, our Chicken Pizza is a culinary masterpiece that promises a flavor-packed experience. Satisfy your cravings - order now for a taste of Grilled Chicken Perfection.</p>
+                        <h2>Rating: 4.8<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row20','description-row20')">see details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="image-row21"><img src="images/cheese pizza.jpg" ></td>
+                    <td id="description-row21">
+                        <h1>Cheese Pizza</h1>
+                        <p>Experience pizza in its purest form with our Classic Cheese Pizza. Revel in the simplicity of a perfectly baked crust, smothered in a luscious layer of melted cheese. Each bite is a symphony of textures, from the crispy outer crust to the gooey, stretchy goodness of melted cheese.</p>
+                        <h2>Rating: 5<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row21','description-row21')">see details</button>
+                    </td>
+                    <td id="image-row22"><img src="images/pepper pizza.jpg" ></td>
+                    <td id="description-row22">
+                        <h1>Pepperoni Pizza</h1>
+                        <p>Treat your taste buds to a spicy adventure with our Pepperoni Feast Pizza. Generously topped with zesty pepperoni slices, this pizza is a flavor explosion that ignites the senses. The perfect combination of spicy pepperoni, melted cheese, and our signature tomato sauce delivers a bold and irresistible taste.</p>
+                        <h2>Rating: 4.8<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row22','description-row22')">see details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="image-row23"><img src="images/hawai pizza.jpg" ></td>
+                    <td id="description-row23">
+                        <h1>Hawaiian pizza</h1>
+                        <p>Transport yourself to a tropical paradise with our Hawaiian Bliss Pizza. Savor the sweetness of pineapple paired with the savory goodness of ham, all atop a canvas of our signature tomato sauce and melted cheese </p>
+                        <h2>Rating: 3.6<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row23','description-row23')">see details</button>
+                    </td>
+                    <td id="image-row24"><img src="images/bbq.jpg" ></td>
+                    <td id="description-row24">
+                        <h1>BBQ chicken pizza</h1>
+                        <p>along with perfectly cooked pieces of white meat chicken, meet tangy and zesty BBQ sauce head-on. It's a flavor punch sure to satisfy all your barbecue cravings.</p>
+                        <h2>Rating: 3.6<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row24','description-row24')">see details</button>
+                    </td>
+                </tr>
+                <tr id="cake">
+                    <td colspan="2"><br><h1>Cake</h1><br><td>
+                </tr>
+                <tr>
+                    <td id="image-row25"><img src="images/chococake.jpg" ></td>
+                    <td id="description-row25">
+                        <h1>Chocolate Cake</h1>
+                        <p>Dive into the richness of our Decadent Chocolate Cake, a heavenly creation that promises to satisfy your deepest chocolate cravings. Each slice is a symphony of velvety chocolate layers, expertly crafted to deliver a moist and indulgent experience.</p>
+                        <h2>Rating: 4.1<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row25','description-row25')">see details</button>
+                    </td>
+                    <td id="image-row26"><img src="images/butter cream.jpg" ></td>
+                    <td id="description-row26">
+                        <h1>ButterCream Cake</h1>
+                        <p>Experience the airy delight of our Buttercream Dream Cake, a confectionery masterpiece that combines velvety soft cake layers with clouds of whipped buttercream. Delicately sweet and incredibly smooth, each bite is a journey into a world of pure, melt-in-your-mouth joy.</p>
+                        <h2>Rating: 4.8<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row26','description-row26')">see details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="image-row27"><img src="images/caramel.jpg" ></td>
+                    <td id="description-row27">
+                        <h1>Caramel Cake</h1>
+                        <p>Indulge in the golden allure of our Caramel Symphony Cake, a celebration of rich, buttery caramel flavor that dances on your taste buds. Layers of moist cake are generously draped in a luscious caramel glaze, creating a perfect harmony of sweetness and sophistication.</p>
+                        <h2>Rating: 5<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row27','description-row27')">see details</button>
+                    </td>
+                    <td id="image-row28"><img src="images/redvelvet.jpg" ></td>
+                    <td id="description-row28">
+                        <h1>Redvelvet Cake</h1>
+                        <p>Treat yourself to the Velvet Elegance of our Red Velvet Delight Cake. Immerse yourself in the luxurious texture of vibrant red cake layers, kissed with a hint of cocoa, and perfectly complemented by a velvety cream cheese frosting. Each slice is a visual and gustatory delight, capturing the essence of timeless elegance</p>
+                        <h2>Rating: 4.8<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row28','description-row28')">see details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="image-row29"><img src="images/pinecake.jpg" ></td>
+                    <td id="description-row29">
+                        <h1>Pineapple cake</h1>
+                        <p>Escape to a Tropical Paradise with our Pineapple Bliss Cake. Experience the juicy sweetness of ripe pineapple, expertly infused into layers of moist cake and adorned with a light and fluffy pineapple-infused frosting. Each bite is a refreshing journey into the tropics, capturing the essence of summer in every slice</p>
+                        <h2>Rating: 3.6<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row29','description-row29')">see details</button>
+                    </td>
+                    <td id="image-row30"><img src="images/oreocake.jpg" ></td>
+                    <td id="description-row30">
+                        <h1>Oreo Cake</h1>
+                        <p> Layers of velvety chocolate cake are generously filled with a decadent Oreo-infused cream, creating a symphony of rich flavors and delightful textures. Topped with Oreo crumbles for that extra crunch, our Oreo Cake is a celebration of the beloved cookies and cream combination. Order now for a slice of Cookies and Cream Delight.</p>
+                        <h2>Rating: 3.6<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row30','description-row30')">see details</button>
+                    </td>
+                </tr>
+                <tr id="tiffins">
+                    <td colspan="2"><br><h1>Tiffins</h1><br><td>
+                </tr>
+                <tr>
+                    <td id="image-row31"><img src="images/idly.jpg" ></td>
+                    <td id="description-row31">
+                        <h1>Idly</h1>
+                        <p>Indulge in the delicate charm of our Pillowy Soft Idly, a South Indian classic that's light as air and irresistibly soft. Served with an aromatic side of coconut chutney and tangy sambar, each bite is a journey into the heart of traditional flavors. Experience the magic of authentic idly - order now for a taste of South Indian comfort.</p>
+                        <h2>Rating: 4.1<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row31','description-row31')">see details</button>
+                    </td>
+                    <td id="image-row32"><img src="images/dosa.jpg" ></td>
+                    <td id="description-row32">
+                        <h1>Dosa</h1>
+                        <p> a South Indian masterpiece that's both light and satisfying. Delight in the golden, crispy texture as you savor every bite. Served with a trio of delectable coconut chutney, tangy sambar, and zesty tomato chutney, our Dosa Extravaganza is a celebration of traditional flavors. Order now for a taste of South Indian authenticity.</p>
+                        <h2>Rating: 4.8<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row32','description-row32')">see details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="image-row33"><img src="images/vada.jpg" ></td>
+                    <td id="description-row33">
+                        <h1>Vada</h1>
+                        <p>Savor the magic of our Crispy Medu Vada, a deep-fried delight that's golden and crunchy on the outside, yet soft and fluffy on the inside. Paired with zesty coconut chutney and spicy sambar, each vada is a perfect balance of textures and flavors. Immerse yourself in the delight of authentic South Indian cuisine - order now for a taste of Crispy Vada Magic.</p>
+                        <h2>Rating: 5<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row33','description-row33')">see details</button>
+                    </td>
+                    <td id="image-row34"><img src="images/mysore-bonda.jpg" ></td>
+                    <td id="description-row34">
+                        <h1>Mysore Bonda</h1>
+                        <p>Bursting with flavors of green chilies, ginger, and curry leaves, each bonda is a perfect balance of spice and warmth. Served with a side of coconut chutney, our Mysore Bonda Delight is a culinary adventure waiting to be savored. Order now for a taste of spicy indulgence.</p>
+                        <h2>Rating: 4.8<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row34','description-row34')">see details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="image-row35"><img src="images/poori.jpg" ></td>
+                    <td id="description-row35">
+                        <h1>Poori</h1>
+                        <p> a North Indian classic that promises a delightful experience with every bite. Each golden-brown poori is deep-fried to crispy perfection, creating a delightful contrast to its soft and airy interior. Served with aromatic potato masala and a side of tangy pickle, our Poori is a celebration of North Indian comfort. Order now and experience the joy of Fluffy Poori Perfection.</p>
+                        <h2>Rating: 3.6<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row35','description-row35')">see details</button>
+                    </td>
+                    <td id="image-row36"><img src="images/chapathi.jpg" ></td>
+                    <td id="description-row36">
+                        <h1>Chapathi</h1>
+                        <p>a versatile staple that's both hearty and nutritious. Each chapathi is expertly crafted, soft yet with a slight chewiness, and pairs perfectly with a variety of accompaniments. Whether you enjoy it with curry, dal, or a dollop of ghee, our Chapathi is a symbol of comfort and simplicity. Order now for a taste of Whole Wheat Chapathi Love.</p>
+                        <h2>Rating: 3.6<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h2>
+                        <button onclick="details('image-row36','description-row36')">see details</button>
+                    </td>
+              </tr>
+            </table>
+        </section>     
+    </body>
+    <footer>
+        <div class="nav-top-bar">
+            <span>copyrights reserved @ Jajula kishore nandhan 22761A0588 LBRCE</span>
+        </div>
+    </footer>
+</html>

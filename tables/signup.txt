@@ -1,0 +1,8 @@
+create table signup(
+	username varchar2(30),
+	Email varchar2(30),
+	Mobile varchar2(30),
+	Dob varchar2(15),
+	gender varchar2(10),
+	password varchar2(20)
+);

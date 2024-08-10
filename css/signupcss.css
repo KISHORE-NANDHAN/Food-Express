@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+    color: white;
+  }
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    
+  }
+div.center{
+    border-radius: 10px;
+    border: 2px solid yellow;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    backdrop-filter: brightness(40%);
+}
+img{
+    width:80%;
+    height:20%;
+}
+input{
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+    padding: 13px 15px;
+    background-color: rgba(255,255,255,0.3);
+    color: white;
+    font-size: 15px;
+}
+::placeholder{
+    color: white;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+h4{
+    text-align: left;
+    margin-left: 70px;
+}
+h5{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+button{
+    font-size: 15px;
+    padding: 10px 24px;
+    border-radius: 6px;
+    background-color: yellow;
+}
+button:hover{
+    background-color: yellowgreen;
+}
+.password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.password-toggle-icon{
+    float: right;
+    margin-right: 60px;
+}
+a:visited {
+    color: cyan;
+    background-color: transparent;
+}
+a:hover{
+    color: white;
+    background-color: transparent
+}
+a:active{
+    color: yellow;
+    background-color: transparent
+}
+tr{
+    float: left;
+    margin-left: 60px;
+}
+.hide{
+    text-align: left;
+    padding-left: 65px;
+}
+.hide h6{
+    color: #EE4B2B;
+    display: none;
+}

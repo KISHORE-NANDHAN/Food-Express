@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Details</title>
+  <link rel="stylesheet" href="css/food-details-css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="js/food-details-js.js"></script>
+</head>
+<body>
+    <header class="logo-search">
+      <div class="search">
+      <img src="images/logo2.png">
+      <input type="search" class="search" id="searchInput" list="mylist" placeholder="enter your food item"><button id="searchicon" onclick="search()"><i class="fas fa-search"></i></button>
+      <datalist id="mylist">
+          <option>biryani</option>
+          <option>burger</option>
+          <option>ice-cream</option>
+          <option>pizza</option>
+          <option>cake</option>
+          <option>tiffin</option>
+      </datalist>
+    </div>
+      <div class="links">
+          <table class="align">
+              <tr>
+                  <td><a href="home.jsp">home</a></td>
+                  <td><a href="home.jsp#about us">about us</a></td>
+                  <td><a href="explore.html">explore</a></td>
+                  <td><a href="logout.jsp">Logout</a></td>
+                  <td><a href="pro.jsp">profile</a></td>
+              </tr>
+          </table>
+      </div>
+  
+    </header>
+
+  <div id="photo-details">
+    <img id="order_img" src=""  alt="Food Image">
+    <div id="photo-info">
+      <h1 id="order_h1"></h1>
+      <p id="order_p"></p>
+      <h2 id="order_h2"></h2><span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span>
+      <h2>Rate: <s>₹450</s>   ₹299</h2>
+      <button onclick="order('photo-details','photo-info')">Order</button>
+    </div>
+
+    <img id="offer-image" src="images/offer.jpg" alt="Offer Image">
+
+    <div id="buttons-container">
+      <button class="button">Restaurants</button>
+      <button class="button">Overview</button>
+      <button class="button">Reviews</button>
+    </div>
+
+    <div id="restaurant-list">
+        <div class="restaurant">
+            <img src="images/restaurent-1.jpg" alt="Restaurant 1" class="restaurant-photo">
+            <h3>Dalchin - Fine Dining Restaurant</h3>
+            <p>Olive Tree Hotel, Punnami Ghat, Bhavanipuram, Vijayawada, Andhra Pradesh 520012</p>
+            <h4>Rating: 4.5<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h4>
+            <button>Call</button>
+            <button>Directions</button>
+          </div>
+          
+          <div class="restaurant">
+            <img src="images/restauarent-2.jpg" alt="Restaurant 2" class="restaurant-photo">
+            <h3>Red Chilli Restaurant</h3>
+            <p>GJ3W+4QV, Opposite Hotel Murali Fortune, Sidhartha Nagar, Labbipet, Vijayawada</p>
+            <h4>Rating: 3.9<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h4>
+            <button>Call</button>
+            <button>Directions</button>
+          </div>
+          
+          <div class="restaurant">
+            <img src="images/restuaurent-3.jpg" alt="Restaurant 3" class="restaurant-photo">
+            <h3>JAGAVIS TRAIN RESTAURANT</h3>
+            <p>AAcharya, building, 40-1-51c, 4th floor, KBLC building, MG road, near, Benz Cir, beside KFC, Acharya Ranga Nagar, Vijayawada, Andhra Pradesh 520010</p>
+            <h4>Rating: 4.1<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h4>
+            <button>Call</button>
+            <button>Directions</button>
+          </div>
+          
+          <div class="restaurant">
+            <img src="images/restaurent4.jpg" alt="Restaurant 4" class="restaurant-photo">
+            <h3>Minerva Grand Restaurant</h3>
+            <p>M.G. Road Vijayawada Opp Chenupati Petrol Bunk Road, Vijayawada 520010 India</p>
+            <h4>Rating: 4.7<span style="color:goldenrod;"><i class="fa-solid fa-star"></i></span></h4>
+            <button>Call</button>
+            <button>Directions</button>
+          </div>
+    </div>
+</body>
+<footer>
+  <div class="nav-top-bar">
+      <span>copyrights reserved @ Jajula kishore nandhan 22761A0588 LBRCE</span>
+  </div>
+</footer>
+</html>
